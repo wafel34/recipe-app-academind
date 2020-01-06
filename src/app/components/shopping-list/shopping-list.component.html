@@ -1,0 +1,8 @@
+<app-shopping-list-edit></app-shopping-list-edit>
+<hr>
+<ul class="list-group" *ngFor="let ingridient of ingridients">
+    <a class="list-group-item" style="cursor: pointer;">
+        <span><strong>Name:</strong> {{ingridient.Name}}</span>
+        <span class="d-inline-block mx-2"><strong>Quantity:</strong> {{ingridient.Amount}}</span>
+    </a>
+</ul>

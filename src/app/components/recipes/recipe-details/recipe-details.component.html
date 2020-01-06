@@ -1,0 +1,14 @@
+<div class="row py-4" style="border: 1px solid">
+    <div class="col-md-6">
+        <img class="img-fluid" [src]="selectedRecipe.ImagePath" alt="">
+    </div>
+    <div class="col-md-6">
+        <h3>{{selectedRecipe.Name}}</h3>
+        <p>{{selectedRecipe.Description}}</p>
+    </div>
+    <div class="offset-md-6 col-md-6">
+        <button class="btn btn-primary">To shopping list</button>
+        <button class="btn btn-secondary">Edit recipe</button>
+        <button class="btn btn-warning">Add recipe</button>
+    </div>
+</div>
