@@ -1,4 +1,4 @@
-<app-shopping-list-edit></app-shopping-list-edit>
+<app-shopping-list-edit (shoppingListItemAdded)="onShoppingListItemAdded($event)"></app-shopping-list-edit>
 <hr>
 <ul class="list-group" *ngFor="let ingridient of ingridients">
     <a class="list-group-item" style="cursor: pointer;">

@@ -9,13 +9,17 @@ import { IngridientModel } from 'src/app/models/ingridient/ingridient-model';
 })
 export class ShoppingListComponent implements OnInit {
 
-  private ingridients: IngridientModelInterface[] = [
+  ingridients: IngridientModelInterface[] = [
     new IngridientModel('onion', 2),
     new IngridientModel('bread', 1)
   ];
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onShoppingListItemAdded(ingridient: IngridientModelInterface) {
+    this.ingridients.push(ingridient);
   }
 
 }
